@@ -29,9 +29,6 @@ class State {
                         if (brick.powerup) {
                             this.actors.push(new PowerUp(brick.pos));
                         }
-                        if (a.type == 'ball') {
-                            a.speed = collided[1];
-                        }
                         this.level.bricks = this.level.bricks.filter(b => b != brick);
                         bricks = bricks.filter(b => b != brick);
                     }
